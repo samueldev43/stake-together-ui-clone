@@ -1,0 +1,57 @@
+.button {
+    width: auto;
+    background-color: var(--primary-blue);
+    color: #fff;
+    text-transform: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.wLink {
+    padding: 8px 24px;
+    transition: all .2s;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+    &:hover {
+        background-color: var(--purple-7);
+    }
+}
+
+.wButton {
+    max-width: 162px;
+    padding: 12px 24px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+     background-color: var(--purple-5);
+    }
+}
+
+.btn {
+    border: 1px solid var(--secundary-text);
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-weight: 500;
+}
+
+.buttonActive {
+    background-color: var(--pure-white);
+    color: var(--primary-blue);
+}
+
+.buttonDisabled {
+    background-color: var(--pure-white);
+    color: var(--secundary-text);
+}

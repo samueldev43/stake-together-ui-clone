@@ -1,0 +1,322 @@
+.sectionDefault {
+    width: 100%;
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    > div {
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.containerContent {  
+    display: flex;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+.oneColumn {
+    width: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/*-----------------------------------------------------*/
+
+.divBlock25 {
+    padding-top: 56px;
+}
+
+.divBlock24 {
+    display: flex;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.divBlockChild {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    a {
+        width: auto;
+        color: var(--secondary);
+        background-color: rgba(55, 59, 138, 0);
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 500;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+      
+        &:hover {
+            width: auto;
+            background-color: var(--purple-5);
+            border-radius: 8px;
+        }
+    }
+}
+
+/*-----------------------------------------------------*/
+
+.cardHero {
+    width: 40%;
+    border: 1px solid var(--blue-2);
+    background-color: var(--pure-white);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 12px rgba(195, 195, 228, .4);
+    text-align: center;
+}
+
+.cardTitle {
+    color: var(--primary-blue);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.titleSection {
+    color: var(--secondary);
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.textBlock {
+    color: var(--primary-blue);
+    font-size: 14px;
+}
+
+.textField {
+    width: 35%;
+    height: 40px;
+    color: var(--secundary-text);
+    text-align: left;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+    display: block;
+
+    &:hover {
+        border: 1px solid var(--ethereum-purple);
+        color: var(--gray-text-1);
+    }
+}
+
+._50_percent {
+    width: 50%;
+}
+
+.titleHero {
+    color: var(--secondary);
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 64px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+}
+.subtitleHero {
+    color: var(--gray-text-1);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.ctaBlock {
+    width: 100%;
+    border-radius: var(--borda-8);
+    background-color: var(--lightblue-background);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    display: flex;
+}
+.ctaTitle {
+    color: var(--secondary);
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.ctaSubtitle {
+    color: var(--primary-blue);
+    font-size: 20px;
+}
+
+.stepNumber {
+    color: var(--primary-blue);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 56px;
+}
+
+.paragraph {
+    color: var(--primary-blue);
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/*-------- UTILITY Classes - COL --------------------*/
+
+.colContent {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    margin-top: 32px;
+}
+
+._4Col {
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    display: flex;
+}
+
+._6Col {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-columns: 1fr;
+    justify-content: space-between;
+    display: grid;
+}
+
+._7Col {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    text-align: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-columns: 1fr;
+    justify-content: space-between;
+    justify-items: center;
+    display: grid;
+}
+
+.stakingProducts {
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.itemsCenter {
+    align-items: center;
+    text-align: center;
+}
+
+/*------------------- MEDIA QUERIES --------------------------------*/
+
+@media screen and (min-width: 1440px) {
+    .titleHero {
+        padding-bottom: 24px;
+        font-size: 56px;
+    }
+
+    .subtitleHero {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .stakingProducts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    ._6Col {
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    ._7Col {
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .oneColumn {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        strong {font-size: 28px;}
+
+        input {width: 80%;}
+    }
+    
+    .ctaTitle {
+        font-size: 32px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .sectionDefault {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        
+        > div {flex-direction: column-reverse;}
+
+        .oneColumn {flex-direction: column;}
+
+        .divBlockChild {flex-direction: row; }
+    }
+
+    .divBlock25 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .colContent {
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        justify-items: center;
+        display: grid;
+    }
+
+    ._50_percent {width: 100%;}
+}
+
+@media screen and (max-width: 479px) {
+    
+    .divBlockChild { flex-direction: column; }
+    .colContent {grid-template-columns: 1fr ;}
+
+    ._7Col {
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ctaTitle {font-size: 24px;}
+}
