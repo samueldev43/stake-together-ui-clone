@@ -15,20 +15,20 @@ export function Header() {
   }
 
   return (
-    <header className={`${style.container}`}>
-      <div className={` ${style.menuContainer} `}>
+    <header className={style.container}>
+      <div className={style.menuContainer}>
         <a href="#">
           <Image width={200} height={37} src={"/network/logo-full.svg"} alt='Stake Together' loading='lazy' />
         </a>
 
         <div className={`${style.hamburgerMenu}  ${isMenuOpen ? style.hamburgerMenuOpen : '' }`}>
-          <button className={` ${style.toggleButton} `} onClick={toggleMenu}>
+          <button className={style.toggleButton} onClick={toggleMenu}>
             <Menu style={isMenuOpen ? {color: '#ffffff'} : {color: ''}}/>
           </button>
         </div>
 
-        <nav className={` ${style.navigation} `}>
-          <div className={`${style.dropdownToggleBox}`}>
+        <nav className={style.navigation}>
+          <div className={style.dropdownToggleBox}>
             <span>PT</span>
             <ChevronDown size={16} />
           </div>
@@ -37,7 +37,7 @@ export function Header() {
 
         {isMenuOpen ?
          <nav className={` ${style.navigationMobile} ${style.menuOpen}`}>
-          <div className={`${style.dropdownToggleBox}`}>
+          <div className={style.dropdownToggleBox}>
             <span>PT</span>
             <ChevronDown size={16} />
           </div>
@@ -45,7 +45,7 @@ export function Header() {
         </nav>
         :
         <nav className={` ${style.navigationMobile} ${style.menuClosed}`}>
-          <div className={`${style.dropdownToggleBox}`}>
+          <div className={style.dropdownToggleBox}>
             <span>PT</span>
             <ChevronDown size={16} />
           </div>

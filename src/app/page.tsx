@@ -1,82 +1,83 @@
+import Image from "next/image";
 import { Header } from "@/components/Header/Header";
 import { ButtonLink } from "@/components/ButtonLink/ButtonLink";
 import { LayoutCard } from "@/components/LayoutCards/Card";
 import { ProductsCard } from "@/components/Products/Products";
-
-import style from './styles/page.module.scss'
-import Image from "next/image";
 import { Avatar } from "@/components/Avatar/Avatar";
 import { Footer } from "@/components/Footer/Footer";
+
+import style from './styles/page.module.scss'
+
 
 export default function Home() {
   return (
     <>
       <Header />
-      <section className={` ${style.sectionDefault} `}>
-        <div className={` ${style.containerContent} `}>
+      <section className={style.sectionDefault}>
+        <div className={style.containerContent}>
           <div className={` ${style._50_percent} ${style.divBlock25} `}>
-            <h1 className={` ${style.titleHero} `}>Invista em Staking</h1>
-            <span className={` ${style.subtitleHero} `}>Classe de ativos mais seguros e rentáveis do mercado <br />
+            <h1 className={style.titleHero}>Invista em Staking</h1>
+            <span className={style.subtitleHero}>Classe de ativos mais seguros e rentáveis do mercado <br />
               cripto com lastro em infraestrutura de tecnologia</span>
             <br /><br />
             <ButtonLink type={"w-button"} text={"Investir Agora"} />
           </div>
           <div className={` ${style._50_percent} ${style.divBlock24}`}>
-            <div className={` ${style.cardHero} `}>
+            <div className={style.cardHero}>
               <Image width={48} height={48} src={"images/multi_produtos.svg"} loading="lazy" alt={""} />
-              <h4 className={` ${style.cardTitle} `}>Multi Produtos</h4>
-              <span className={` ${style.textBlock} `}>Ethereum, Eigen Layer, Polygon, Celestia</span>
+              <h4 className={style.cardTitle}>Multi Produtos</h4>
+              <span className={style.textBlock}>Ethereum, Eigen Layer, Polygon, Celestia</span>
             </div>
-            <div className={` ${style.cardHero} `}>
+            <div className={style.cardHero}>
               <Image width={48} height={48} src={"images/multi_network.svg"} loading="lazy" alt={""} />
-              <h4 className={` ${style.cardTitle} `}>Multi Rede</h4>
-              <span className={` ${style.textBlock} `}>Arbitrum, Optimism, Polygon, Ethereum</span>
+              <h4 className={style.cardTitle}>Multi Rede</h4>
+              <span className={style.textBlock}>Arbitrum, Optimism, Polygon, Ethereum</span>
             </div>
-            <div className={` ${style.cardHero} `}>
+            <div className={style.cardHero}>
               <Image width={48} height={48} src={"images/multi_moeda.svg"} loading="lazy" alt={""} />
-              <h4 className={` ${style.cardTitle} `}>Multi Moeda</h4>
-              <span className={` ${style.textBlock} `}>Real, Dolar, Euro, Ethereum, Bitcoin, USDT</span>
+              <h4 className={style.cardTitle}>Multi Moeda</h4>
+              <span className={style.textBlock}>Real, Dolar, Euro, Ethereum, Bitcoin, USDT</span>
             </div>
-            <div className={` ${style.cardHero} `}>
+            <div className={style.cardHero}>
               <Image width={48} height={48} src={"images/multi_carteira.svg"} loading="lazy" alt={""} />
-              <h4 className={` ${style.cardTitle} `}>Multi Carteira</h4>
-              <span className={` ${style.textBlock} `}>Google, Facebook, Metamask, Wallet Connect</span>
+              <h4 className={style.cardTitle}>Multi Carteira</h4>
+              <span className={style.textBlock}>Google, Facebook, Metamask, Wallet Connect</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={` ${style.sectionDefault} `}>
+      <section className={style.sectionDefault}>
         <div>
-          <h2 className={` ${style.titleSection} `}>Como fazer</h2>
+          <h2 className={style.titleSection}>Como fazer</h2>
           <div className={` ${style.colContent} ${style._4Col} `}>
             <LayoutCard>
-              <h3 className={` ${style.stepNumber} `}>1</h3>
-              <p className={` ${style.paragraph} `}>Selecione o <br />Produto</p>
+              <h3 className={style.stepNumber}>1</h3>
+              <p className={style.paragraph}>Selecione o <br />Produto</p>
             </LayoutCard>
 
             <LayoutCard>
-              <h3 className={` ${style.stepNumber} `}>2</h3>
-              <p className={` ${style.paragraph} `}>Selecione o Método de Pagamento</p>
+              <h3 className={style.stepNumber}>2</h3>
+              <p className={style.paragraph}>Selecione o Método de Pagamento</p>
             </LayoutCard>
 
             <LayoutCard>
-              <h3 className={` ${style.stepNumber} `}>3</h3>
-              <p className={` ${style.paragraph} `}>Comprar o Token de Staking</p>
+              <h3 className={style.stepNumber}>3</h3>
+              <p className={style.paragraph}>Comprar o Token de Staking</p>
             </LayoutCard>
 
             <LayoutCard>
-              <h3 className={` ${style.stepNumber} `}>4</h3>
-              <p className={` ${style.paragraph} `}>Receba <br />Recompensas</p>
+              <h3 className={style.stepNumber}>4</h3>
+              <p className={style.paragraph}>Receba <br />Recompensas</p>
             </LayoutCard>
 
           </div>
         </div>
       </section>
 
-      <section className={` ${style.sectionDefault} `}>
+      <section className={style.sectionDefault}>
         <div>
-          <h2 className={` ${style.titleSection} `}>Produtos de Staking</h2>
+          <h2 className={style.titleSection}>Produtos de Staking</h2>
           <div className={` ${style.colContent} ${style.stakingProducts} `}>
             <ProductsCard
               img={"/images/ethereum_products.png"}
@@ -122,51 +123,51 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={` ${style.sectionDefault} `}>
+      <section className={style.sectionDefault}>
         <div>
-          <h2 className={` ${style.titleSection} `}>Porque investir em Staking</h2>
+          <h2 className={style.titleSection}>Porque investir em Staking</h2>
           <div className={` ${style.colContent} ${style._4Col} `}>
             <LayoutCard>
-              <div className={` ${style.divBlockChild} `}>
-                <span className={` ${style.paragraph} `}>#01</span>
+              <div className={style.divBlockChild}>
+                <span className={style.paragraph}>#01</span>
                 <Image width={30} height={30} alt="" src={"/network/staketogether-icon.svg"} />
               </div>
-              <p className={` ${style.textBlock} `}>Para aumentar os seus rendimentos enquanto segura bons ativos pro longo prazo</p>
+              <p className={style.textBlock}>Para aumentar os seus rendimentos enquanto segura bons ativos pro longo prazo</p>
             </LayoutCard>
             <LayoutCard>
-              <div className={` ${style.divBlockChild} `}>
-                <span className={` ${style.paragraph} `}>#02</span>
+              <div className={style.divBlockChild}>
+                <span className={style.paragraph}>#02</span>
                 <Image width={30} height={30} alt="" src={"/network/staketogether-icon.svg"} />
               </div>
-              <p className={` ${style.textBlock} `}>Para se proteger do sistema financeiro tradicional por meio de ativos desentralizados</p>
+              <p className={style.textBlock}>Para se proteger do sistema financeiro tradicional por meio de ativos desentralizados</p>
             </LayoutCard>
             <LayoutCard>
-              <div className={` ${style.divBlockChild} `}>
-                <span className={` ${style.paragraph} `}>#03</span>
+              <div className={style.divBlockChild}>
+                <span className={style.paragraph}>#03</span>
                 <Image width={30} height={30} alt="" src={"/network/staketogether-icon.svg"} />
               </div>
-              <p className={` ${style.textBlock} `}>Para se manter seguro investindo nas melhores infraestruturas de staking</p>
+              <p className={style.textBlock}>Para se manter seguro investindo nas melhores infraestruturas de staking</p>
             </LayoutCard>
             <LayoutCard>
-              <div className={` ${style.divBlockChild} `}>
-                <span className={` ${style.paragraph} `}>#04</span>
+              <div className={style.divBlockChild}>
+                <span className={style.paragraph}>#04</span>
                 <Image width={30} height={30} alt="" src={"/network/staketogether-icon.svg"} />
               </div>
-              <p className={` ${style.textBlock} `}>Acessibilidade para que todos os publicos possam usufruir de investimentos desentralizados</p>
+              <p className={style.textBlock}>Acessibilidade para que todos os publicos possam usufruir de investimentos desentralizados</p>
             </LayoutCard>
           </div>
         </div>
       </section>
 
-      <section className={` ${style.sectionDefault} `}>
-        <div className={` ${style.divBlockChild} `}>
-          <h2 className={` ${style.titleSection} `}>Confiado Por</h2>
+      <section className={style.sectionDefault}>
+        <div className={style.divBlockChild}>
+          <h2 className={style.titleSection}>Confiado Por</h2>
           <a href="#">Ver todos</a>
         </div>
         <div className={` ${style.colContent} ${style._6Col}`}>
           <LayoutCard>
-            <h3 className={` ${style.stepNumber} `}>47</h3>
-            <p className={` ${style.paragraph} `}>Projetos</p>
+            <h3 className={style.stepNumber}>47</h3>
+            <p className={style.paragraph}>Projetos</p>
           </LayoutCard>
           <ProductsCard
             img={"/images/yield_hacker.png"}
@@ -186,33 +187,33 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={` ${style.sectionDefault} `}>
+      <section className={style.sectionDefault}>
         <div>
-          <h2 className={` ${style.titleSection} `}>Segurança</h2>
+          <h2 className={style.titleSection}>Segurança</h2>
           <div className={` ${style.colContent}  ${style._4Col} ${style.itemsCenter}`}>
             <LayoutCard>
-              <p className={` ${style.textBlock} `}>Infraestrutura</p>
+              <p className={style.textBlock}>Infraestrutura</p>
               <Image width={0} height={0} sizes="100vw" style={{width: '100%', height: 'auto'}} src={"/images/network.png"} alt={""} />
             </LayoutCard>
             <LayoutCard>
-              <p className={` ${style.textBlock} `}>Auditoria</p>
+              <p className={style.textBlock}>Auditoria</p>
               <Image width={0} height={0} sizes="100vw" style={{width: '100%', height: 'auto'}} src={"/images/block_sec.png"} alt={""} />
             </LayoutCard>
             <LayoutCard>
-              <p className={` ${style.textBlock} `}>Auditoria</p>
+              <p className={style.textBlock}>Auditoria</p>
               <Image width={0} height={0} sizes="100vw" style={{width: '100%', height: 'auto'}} src={"/images/hacken.png"} alt={""} />
             </LayoutCard>
             <LayoutCard>
-              <p className={` ${style.textBlock} `}>Auditoria</p>
+              <p className={style.textBlock}>Auditoria</p>
               <Image width={0} height={0} sizes="100vw" style={{width: '100%', height: 'auto'}} src={"/images/sense_security.png"} alt={""} />
             </LayoutCard>
           </div>
         </div>
       </section>
 
-      <section className={` ${style.sectionDefault} `}>
-        <div className={` ${style.divBlockChild} `}>
-          <h2 className={` ${style.titleSection} `}>Time</h2>
+      <section className={style.sectionDefault}>
+        <div className={style.divBlockChild}>
+          <h2 className={style.titleSection}>Time</h2>
           <a href="#">Linkedin</a>
         </div>
         <div className={`${style._7Col}`}>
@@ -225,11 +226,11 @@ export default function Home() {
         </div>
       </section>
       
-      <section className={` ${style.sectionDefault} `}>
+      <section className={style.sectionDefault}>
         <div className={` ${style.containerContent} ${style.oneColumn} `}>
-         <div className={` ${style.ctaBlock} `}>
-          <h2 className={` ${style.ctaTitle} `}>Investir em Staking de Ethereum</h2>
-          <p className={` ${style.ctaSubtitle} `}>Segurança e rentabilidade em um ativos mais seguros do mercado cripto</p>
+         <div className={style.ctaBlock}>
+          <h2 className={style.ctaTitle}>Investir em Staking de Ethereum</h2>
+          <p className={style.ctaSubtitle}>Segurança e rentabilidade em um ativos mais seguros do mercado cripto</p>
          </div>
          <ProductsCard
               img={"/images/ethereum_products.png"}
@@ -238,10 +239,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={` ${style.sectionDefault} `}>
-        <div className={` ${style.oneColumn} `}>
-          <strong className={` ${style.titleSection} `}>Receba as Atualizações</strong>
-          <input type="email" placeholder="E-mail" className={` ${style.textField} `}/>
+      <section className={style.sectionDefault}>
+        <div className={style.oneColumn}>
+          <strong className={style.titleSection}>Receba as Atualizações</strong>
+          <input type="email" placeholder="E-mail" className={style.textField}/>
           <ButtonLink type={"w-button"} text={"Cadastrar"} />
         </div>
       </section>

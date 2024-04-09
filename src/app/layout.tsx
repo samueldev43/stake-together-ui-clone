@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     
-    <html lang="en">
+    <html lang="pt">
       <body className={montserrat.className}>{children}</body>
     </html>
   );

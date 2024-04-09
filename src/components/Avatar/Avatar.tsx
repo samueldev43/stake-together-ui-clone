@@ -10,12 +10,12 @@ type AvatarProps = {
 
 export function Avatar(props: AvatarProps) {
     return (
-        <div className={` ${style.teamCard} `}>
+        <div className={style.teamCard}>
             <Image
                 width={144} height={144}
                 src={props.avatarLink}
                 alt=''
-                className={` ${style.profilePic}`}
+                className={style.profilePic}
             />
             <h3 className={`heading`}>{props.name}</h3>
             <p className={`paragraph14`}>{props.role}</p>
